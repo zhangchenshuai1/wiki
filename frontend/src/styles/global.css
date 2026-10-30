@@ -1,0 +1,27 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+}
+
+html.dark {
+    --bg-color: #1a1a2e;
+    --text-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--el-bg-color-page, var(--bg-color));
+    color: var(--el-text-color-primary, var(--text-color));
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--el-color-primary);
+    text-decoration: none;
+}
